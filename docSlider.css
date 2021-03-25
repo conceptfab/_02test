@@ -26,7 +26,7 @@
   display: block;
   margin: 5px 0;
   background-color: #333;
-  opacity: .25;
+  opacity: 0.25;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -46,16 +46,16 @@
 /**------------------------------
   REWRITING IS NOT RECOMMENDED
  -----------------------------**/
-html, body {
-  font-family: 'Lato';
-  font-size: 12px;
+html,
+body {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
   height: 100%;
 }
 
-html, body,
+html,
+body,
 .docSlider,
 .docSlider-inner,
 .docSlider-page {
@@ -70,7 +70,8 @@ html, body,
   outline: none;
 }
 
-html:active, body:active,
+html:active,
+body:active,
 .docSlider:active,
 .docSlider-inner:active,
 .docSlider-page:active {
@@ -100,5 +101,23 @@ html:active, body:active,
   overflow: auto;
   position: absolute;
   overflow-scrolling: touch;
+}
+
+.block {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+  background-color: #333;
+  height: 50vh;
+  width: 50vw;
+}
+
+@media (max-width: 900px) {
+  .block {
+    font-size: 32px;
+    height: 80vh;
+    width: 80vw;
+  }
 }
 /*# sourceMappingURL=docSlider.css.map */
